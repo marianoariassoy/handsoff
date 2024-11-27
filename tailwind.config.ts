@@ -55,6 +55,11 @@ export default {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
+      },
+      fontSize: {
+        xs: '0.6rem',
+        sm: '0.7rem',
+        base: '0.875rem'
       }
     }
   },

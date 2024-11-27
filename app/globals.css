@@ -66,3 +66,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+.text-shadow {
+  text-shadow: 0 0 10px hsl(49, 100%, 50%);
+  transition: 0.3s ease-in-out;
+  &:hover {
+    text-shadow: 0 0 0 hsl(49, 100%, 50%);
+  }
+}
+
+.topbar-animation {
+  animation: scale ease forwards;
+  animation-timeline: scroll();
+  animation-range: 0% 100px;
+}
+@keyframes scale {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-55px);
+  }
+}

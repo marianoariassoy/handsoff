@@ -1,5 +1,6 @@
 'use client'
 import { useRef } from 'react'
+import Marquee from 'react-fast-marquee'
 
 const Topbar = () => {
   const ref = useRef<HTMLDivElement>(null)
@@ -12,10 +13,10 @@ const Topbar = () => {
 
   return (
     <div
-      className='text-center text-sm pb-4 border-b border-black relative'
+      className='text-center py-4 border-b border-black relative '
       ref={ref}
     >
-      <div className='absolute top-0 right-0 flex items-center'>
+      <div className='absolute right-0 flex items-center '>
         <button
           className='hover:text-primary'
           onClick={handleTopbar}
@@ -24,7 +25,7 @@ const Topbar = () => {
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'
             fill='currentColor'
-            className='size-6'
+            className='size-5'
           >
             <path
               fillRule='evenodd'
@@ -34,8 +35,15 @@ const Topbar = () => {
           </svg>
         </button>
       </div>
-
-      <span className='font-bold'>Envios gratis a partir de $200000.- (No incluye los productos de Ups! Mistakes)</span>
+      <div className='font-bold lg:max-w-xl mx-auto px-12'>
+        <Marquee
+          speed={30}
+          gradient={false}
+          pauseOnHover={false}
+        >
+          ¡Envios gratis en tus compras a partir de $200.000! (No incluye los productos de Ups! Mistakes) - &nbsp;
+        </Marquee>
+      </div>
     </div>
   )
 }
