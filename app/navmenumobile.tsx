@@ -6,7 +6,7 @@ import Navmenumobileitem from './navmenumobileitem'
 
 export function Navmenumobile() {
   return (
-    <nav className='border-t border-black py-8 grid grid-cols-2 gap-4'>
+    <nav className='border-t border-black mt-4 pt-8 pb-24 grid grid-cols-2 gap-4'>
       <div className='flex flex-col gap-y-4'>
         {menu.slice(0, 4).map(item => (
           <div key={item.title}>

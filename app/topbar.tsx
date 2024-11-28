@@ -35,7 +35,7 @@ const Topbar = () => {
           </svg>
         </button>
       </div>
-      <div className='font-bold lg:max-w-xl mx-auto px-12'>
+      <div className='font-bold lg:max-w-2xl mx-auto px-12'>
         <Marquee
           speed={30}
           gradient={false}

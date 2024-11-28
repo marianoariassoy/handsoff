@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu } from '@/components/types'
 
-const navmenumobileitem = ({ item }: { item: Menu }) => {
+const Navmenumobileitem = ({ item }: { item: Menu }) => {
   const [submenu, setSubmenu] = useState(false)
 
   const handleSubmenu = () => {
@@ -62,4 +62,4 @@ const navmenumobileitem = ({ item }: { item: Menu }) => {
   )
 }
 
-export default navmenumobileitem
+export default Navmenumobileitem
