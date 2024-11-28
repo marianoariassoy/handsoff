@@ -2,7 +2,8 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { menu } from '@/components/menu'
+import { menu } from '@/lib/menu'
+import { usePathname } from 'next/navigation'
 
 import {
   NavigationMenu,
@@ -15,6 +16,8 @@ import {
 } from '@/components/ui/navigation-menu'
 
 export function Navmenu() {
+  const pathname = usePathname()
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -45,7 +48,9 @@ export function Navmenu() {
               >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <span
-                    className={`font-bold uppercase ${item.alert ? 'text-primary  transition-colors text-shadow' : ''}`}
+                    className={`font-bold uppercase ${
+                      item.alert ? 'text-primary  transition-colors text-shadow' : ''
+                    } ${pathname === item.href ? 'text-primary' : ''}`}
                   >
                     {item.title}
                   </span>

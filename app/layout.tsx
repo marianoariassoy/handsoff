@@ -1,13 +1,9 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { inter } from '@/components/ui/fonts'
+import '@/components/ui/fonts/fonts.css'
 import './globals.css'
 import Header from './header'
 import Footer from './footer'
-
-const roboto = Roboto({
-  subsets: ['latin'], //
-  weight: ['400', '700']
-})
 
 export const metadata: Metadata = {
   title: 'Hands Off!',
@@ -26,12 +22,9 @@ export default function RootLayout({
       lang='es'
       className='min-h-screen'
     >
-      <body
-        className='px-3 lg:px-8 flex flex-col min-h-screen text-base'
-        style={{ fontFamily: roboto.style.fontFamily }}
-      >
+      <body className={`${inter.className} antialiased flex flex-col min-h-screen text-base max-w-8xl mx-auto`}>
         <Header />
-        <main className='flex-1'>{children}</main>
+        <main className='flex-1 px-3 lg:px-8'>{children}</main>
         <Footer />
       </body>
     </html>

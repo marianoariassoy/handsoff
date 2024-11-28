@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu } from '@/components/types'
+import { Menu } from '@/lib/types'
 
 const Navmenumobileitem = ({ item }: { item: Menu }) => {
   const [submenu, setSubmenu] = useState(false)

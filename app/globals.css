@@ -75,11 +75,16 @@
   }
 }
 
-.topbar-animation {
+.font-secondary {
+  font-family: 'TravelingTypewriter', sans-serif;
+}
+
+/* .topbar-animation {
   animation: scale ease forwards;
   animation-timeline: scroll();
-  animation-range: 0% 100px;
+  animation-range: 10% 100px;
 }
+
 @keyframes scale {
   0% {
     transform: translateY(0);
@@ -87,4 +92,4 @@
   100% {
     transform: translateY(-55px);
   }
-}
+} */

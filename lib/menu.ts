@@ -1,4 +1,4 @@
-import { Category } from './types'
+import { Category } from '@/lib/types'
 import { Facebook, Instagram, Twitter, Pinterest, Vimeo } from '@/components/ui/icons'
 
 const submenu_casa: Category[] = [
@@ -382,22 +382,22 @@ export const menu_footer: {
       {
         title: 'Compras',
         title_en: 'Purchases',
-        href: '/compras'
+        href: '/info/compras'
       },
       {
         title: 'Envios',
         title_en: 'Shipments',
-        href: '/envios'
+        href: '/info/envios'
       },
       {
         title: 'Politica de cambios',
         title_en: 'Policy of Changes',
-        href: '/politica-de-cambios'
+        href: '/info/politica-de-cambios'
       },
       {
         title: 'Guia de talles',
         title_en: 'Height Guide',
-        href: '/guia-de-talles'
+        href: '/info/guia-de-talles'
       },
       {
         title: 'Propuestas',
@@ -413,22 +413,17 @@ export const menu_footer: {
       {
         title: 'Compañía',
         title_en: 'Company',
-        href: '/compania'
+        href: '/info/compania'
       },
       {
         title: 'RR.HH.',
         title_en: 'HH.RR.',
-        href: '/rr-hh'
-      },
-      {
-        title: 'Sofas',
-        title_en: 'Sofas',
-        href: ''
+        href: '/info/rr-hh'
       },
       {
         title: 'Blog',
         title_en: 'Blog',
-        href: '/blog'
+        href: '#'
       },
       {
         title: 'Contacto',
