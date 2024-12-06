@@ -280,29 +280,29 @@ export const menu: {
   category: Category[]
 }[] = [
   {
-    title: 'New In',
-    title_en: 'New In',
+    title: 'NEW IN',
+    title_en: 'NEW IN',
     href: '/new-in',
     alert: true,
     category: []
   },
   {
-    title: 'Casa',
-    title_en: 'House',
+    title: 'CASA',
+    title_en: 'HOUSE',
     alert: false,
     href: '',
     category: submenu_casa
   },
   {
-    title: 'Indumentaria',
-    title_en: 'Indumentaria',
+    title: 'INDUMENTARIA',
+    title_en: 'CLOTHES',
     alert: false,
     href: '',
     category: submenu_indumentaria
   },
   {
-    title: 'Accesorios',
-    title_en: 'Accessories',
+    title: 'ACCESORIOS',
+    title_en: 'ACCESSORIES',
     alert: false,
     href: '',
     category: submenu_accesorios
@@ -315,15 +315,15 @@ export const menu: {
     category: []
   },
   {
-    title: 'Propuestas',
-    title_en: 'Proposals',
+    title: 'PROPUESTAS',
+    title_en: 'PROPOSALS',
     alert: true,
     href: '/propuestas',
     category: []
   },
   {
-    title: 'Prensa',
-    title_en: 'Press',
+    title: 'PRENSA',
+    title_en: 'PRESS',
     alert: false,
     href: '/prensa',
     category: []

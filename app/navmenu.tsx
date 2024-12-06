@@ -1,9 +1,9 @@
 'use client'
-
 import * as React from 'react'
 import Link from 'next/link'
 import { menu } from '@/lib/menu'
 import { usePathname } from 'next/navigation'
+import { clsx } from 'clsx'
 
 import {
   NavigationMenu,
@@ -26,7 +26,7 @@ export function Navmenu() {
             {item.category.length > 0 ? (
               <>
                 <NavigationMenuTrigger>
-                  <span className='font-bold uppercase'>{item.title}</span>
+                  <span className='font-bold'>{item.title}</span>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className='grid gap-2 p-6 md:w-[500px] grid-cols-2 md:grid-cols-3 lg:w-[800px]'>
@@ -48,9 +48,11 @@ export function Navmenu() {
               >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <span
-                    className={`font-bold uppercase ${
-                      item.alert ? 'text-primary  transition-colors text-shadow' : ''
-                    } ${pathname === item.href ? 'text-primary' : ''}`}
+                    className={clsx(
+                      'font-bold',
+                      pathname === item.href ? 'text-primary' : '',
+                      item.alert ? 'text-primary transition-colors text-shadow' : ''
+                    )}
                   >
                     {item.title}
                   </span>

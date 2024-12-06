@@ -51,14 +51,9 @@ export default {
           '5': 'hsl(var(--chart-5))'
         }
       },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)'
-      },
       fontSize: {
         xs: '0.6rem',
-        sm: '0.7rem',
+        sm: '0.75rem',
         base: '0.875rem'
       }
     }

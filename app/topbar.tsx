@@ -19,13 +19,13 @@ const Topbar = () => {
     >
       <div className='absolute right-0 flex items-center'>
         <button
-          className='hover:text-primary'
+          className='hover:text-muted-foreground'
           onClick={handleTopbar}
         >
           <X className='h-5 w-5' />
         </button>
       </div>
-      <div className='font-bold lg:max-w-2xl mx-auto px-12'>
+      <div className='font-bold lg:max-w-2xl mx-auto px-12 text-sm'>
         <Marquee
           speed={30}
           gradient={false}

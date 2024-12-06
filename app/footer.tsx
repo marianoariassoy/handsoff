@@ -9,8 +9,8 @@ const Footer = () => {
 
   return (
     <footer className='mt-12 px-3 lg:px-8'>
-      <div className='border-t py-10 border-black flex flex-col lg:flex-row justify-between gap-8 '>
-        <div className='w-full grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4 '>
+      <div className='border-t py-10 border-black flex flex-col lg:flex-row justify-between gap-8'>
+        <div className='w-full grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4'>
           {menu_footer.map(item => (
             <div key={item.title}>
               <div className='font-bold uppercase'>{item.title}</div>
@@ -54,6 +54,20 @@ const Footer = () => {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+      <div className='border-t border-black pb-8 pt-4 flex justify-between'>
+        <div>© {new Date().getFullYear()} Hands Off! Todos los derechos reservados.</div>
+        <div>
+          Made with ❤️ by{' '}
+          <a
+            href='https://www.marianoarias.com'
+            target='_blank'
+            rel='noreferrer'
+            className='underline'
+          >
+            Mariano Arias
+          </a>
         </div>
       </div>
     </footer>

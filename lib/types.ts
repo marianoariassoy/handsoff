@@ -14,3 +14,10 @@ export type Menu = {
   href: string
   category: Category[]
 }
+
+export type Item = {
+  title: string
+  price: string
+  image: string
+  href: string
+}

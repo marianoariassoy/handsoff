@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { clsx } from 'clsx'
 import Link from 'next/link'
 import Image from 'next/image'
 import Topbar from './topbar'
@@ -15,11 +16,11 @@ const Header = () => {
     setIsOpen(!isOpen)
   }
   return (
-    <header className='sticky top-0 flex flex-col pb-8 mb-4 topbar-animation bg-white px-3 lg:px-8 '>
+    <header className='sticky top-0 z-40 flex flex-col pb-8 topbar-animation bg-white px-3 lg:px-8 '>
       <Topbar />
 
       <div className='flex gap-x-4 items-center justify-between mt-4'>
-        <div className={`lg:hidden flex-1 mt-3 flex gap-x-1 items-center ${isOpen ? 'text-muted-foreground' : ''}`}>
+        <div className={clsx('flex mt-3 flex-1 items-center gap-x-1 lg:hidden', isOpen ? 'text-muted-foreground' : '')}>
           <button
             className='font-bold'
             onClick={handleClick}
